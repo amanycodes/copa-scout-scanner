@@ -1,0 +1,249 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/main/sarif-2.1/schema/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Docker Scout",
+          "informationUri": "https://docker.com/products/docker-scout",
+          "name": "docker scout",
+          "rules": [
+            {
+              "id": "CVE-2023-5129",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2023-5129"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2023-5129?s=debian&n=libwebp&ns=debian&t=deb&osn=debian&osv=11&vr=%3C0.6.1-2.1%2Bdeb11u2",
+              "help": {
+                "text": "With a specially crafted WebP lossless file, libwebp may write data out of bounds to the heap.\n\nThe ReadHuffmanCodes() function allocates the HuffmanCode buffer with a size that comes from an array of precomputed sizes: kTableSize. The color_cache_bits value defines which size to use.\n\nThe kTableSize array only takes into account sizes for 8-bit first-level table lookups but not second-level table lookups. libwebp allows codes that are up to 15-bit (MAX_ALLOWED_CODE_LENGTH). When BuildHuffmanTable() attempts to fill the second-level tables it may write data out-of-bounds. The OOB write to the undersized array happens in ReplicateValue.\n\n\n\n---\nREJECTED\n",
+                "markdown": "> With a specially crafted WebP lossless file, libwebp may write data out of bounds to the heap.\n\nThe ReadHuffmanCodes() function allocates the HuffmanCode buffer with a size that comes from an array of precomputed sizes: kTableSize. The color_cache_bits value defines which size to use.\n\nThe kTableSize array only takes into account sizes for 8-bit first-level table lookups but not second-level table lookups. libwebp allows codes that are up to 15-bit (MAX_ALLOWED_CODE_LENGTH). When BuildHuffmanTable() attempts to fill the second-level tables it may write data out-of-bounds. The OOB write to the undersized array happens in ReplicateValue.\n\n\n\n---\nREJECTED\n\n|                |                                                                                  |\n|----------------|----------------------------------------------------------------------------------|\n| Package        | pkg:deb/debian/libwebp@0.6.1-2.1?os_distro=bullseye&os_name=debian&os_version=11 |\n| Affected range | <0.6.1-2.1+deb11u2                                                               |\n| Fixed version  | 0.6.1-2.1+deb11u2                                                                |\n"
+              },
+              "properties": {
+                "affected_version": "<0.6.1-2.1+deb11u2",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "0.6.1-2.1+deb11u2",
+                "purls": [
+                  "pkg:deb/debian/libwebp@0.6.1-2.1?os_distro=bullseye&os_name=debian&os_version=11"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2025-24528",
+              "name": "OsPackageVulnerability",
+              "shortDescription": {
+                "text": "CVE-2025-24528"
+              },
+              "helpUri": "https://scout.docker.com/v/CVE-2025-24528?s=debian&n=krb5&ns=debian&t=deb&osn=debian&osv=11&vr=%3C1.18.3-6%2Bdeb11u6",
+              "help": {
+                "text": "- krb5 1.21.3-5 (bug https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1094730)\n[bookworm] - krb5 <no-dsa> (Minor issue)\nhttps://bugzilla.redhat.com/show_bug.cgi?id=2342796\nFixed by: https://github.com/krb5/krb5/commit/78ceba024b64d49612375be4a12d1c066b0bfbd0\n",
+                "markdown": "> - krb5 1.21.3-5 (bug https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1094730)\n[bookworm] - krb5 <no-dsa> (Minor issue)\nhttps://bugzilla.redhat.com/show_bug.cgi?id=2342796\nFixed by: https://github.com/krb5/krb5/commit/78ceba024b64d49612375be4a12d1c066b0bfbd0\n\n|                |                                                                                        |\n|----------------|----------------------------------------------------------------------------------------|\n| Package        | pkg:deb/debian/krb5@1.18.3-6%2Bdeb11u1?os_distro=bullseye&os_name=debian&os_version=11 |\n| Affected range | <1.18.3-6+deb11u6                                                                      |\n| Fixed version  | 1.18.3-6+deb11u6                                                                       |\n"
+              },
+              "properties": {
+                "affected_version": "<1.18.3-6+deb11u6",
+                "cvssV3_severity": "UNSPECIFIED",
+                "fixed_version": "1.18.3-6+deb11u6",
+                "purls": [
+                  "pkg:deb/debian/krb5@1.18.3-6%2Bdeb11u1?os_distro=bullseye&os_name=debian&os_version=11"
+                ],
+                "security-severity": "3.1",
+                "tags": [
+                  "UNSPECIFIED"
+                ]
+              }
+            }],
+            "version": "1.17.1"
+        }
+      },
+      "results": [
+                {
+          "ruleId": "CVE-2023-5129",
+          "ruleIndex": 0,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability   : CVE-2023-5129                                                                     \n  Severity        : UNSPECIFIED                                                                       \n  Package         : pkg:deb/debian/libwebp@0.6.1-2.1?os_distro=bullseye&os_name=debian&os_version=11  \n  Affected range  : <0.6.1-2.1+deb11u2                                                                \n  Fixed version   : 0.6.1-2.1+deb11u2                                                                 \n  EPSS Score      : 0.000430                                                                          \n  EPSS Percentile : 0.119950                                                                          \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/doc/libwebp6/copyright"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/dpkg/info/libwebp6:amd64.md5sums"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/dpkg/status"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/x86_64-linux-gnu/libwebp.so.6.0.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/doc/libwebp6/copyright"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2025-24528",
+          "ruleIndex": 1,
+          "kind": "fail",
+          "level": "none",
+          "message": {
+            "text": "  Vulnerability  : CVE-2025-24528                                                                          \n  Severity       : UNSPECIFIED                                                                             \n  Package        : pkg:deb/debian/krb5@1.18.3-6%2Bdeb11u1?os_distro=bullseye&os_name=debian&os_version=11  \n  Affected range : <1.18.3-6+deb11u6                                                                       \n  Fixed version  : 1.18.3-6+deb11u6                                                                        \n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/doc/libgssapi-krb5-2/copyright"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/doc/libk5crypto3/copyright"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/doc/libkrb5-3/copyright"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/doc/libkrb5support0/copyright"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/dpkg/info/libgssapi-krb5-2:amd64.md5sums"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/dpkg/info/libk5crypto3:amd64.md5sums"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/dpkg/info/libkrb5-3:amd64.md5sums"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/dpkg/info/libkrb5support0:amd64.md5sums"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/var/lib/dpkg/status"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/x86_64-linux-gnu/krb5/plugins/preauth/spake.so"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/x86_64-linux-gnu/libkrb5.so.3.3"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/doc/libgssapi-krb5-2/copyright"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/doc/libk5crypto3/copyright"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/doc/libkrb5-3/copyright"
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/usr/share/doc/libkrb5support0/copyright"
+                }
+              }
+            }
+          ]
+        }
+      ]}
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "osType": "debian",
+  "osVersion": "11",
+  "arch": "amd64",
+  "packages": [
+    {
+      "name": "test-package-1",
+      "installedVersion": "1.0.0",
+      "fixedVersion": "1.0.1",
+      "vulnerabilityID": "CVE-TEST-001"
+    },
+    {
+      "name": "another-package",
+      "installedVersion": "2.1.0",
+      "fixedVersion": "2.2.0",
+      "vulnerabilityID": "CVE-TEST-002"
+    }
+  ]
+}

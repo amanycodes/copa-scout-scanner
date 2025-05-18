@@ -11,7 +11,7 @@ GOOS              := $(shell go env GOOS)
 BUILDTYPE_DIR     := release
 
 # Build output variables
-CLI_BINARY        := copa-fake
+CLI_BINARY        := copa-scout-scanner-plugin
 OUT_DIR           := ./dist
 BINS_OUT_DIR      := $(OUT_DIR)/$(GOOS)_$(GOARCH)/$(BUILDTYPE_DIR)
 

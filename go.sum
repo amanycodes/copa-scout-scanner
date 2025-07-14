@@ -1,8 +1,8 @@
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc h1:U9qPSI2PIWSS1VwoXQT9A3Wy9MM3WgvqSxFWenqJduM=
 github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/owenrumney/go-sarif/v3 v3.1.4 h1:lqx5Cb7162BC+FuAgJZq8A8XXP4XMw7XoAPZl9iqlQs=
-github.com/owenrumney/go-sarif/v3 v3.1.4/go.mod h1:Olt8kHDlC+ruWzRfmgIQUD+2hoAk6A6vT+ljDUbae2s=
+github.com/owenrumney/go-sarif/v3 v3.2.1 h1:Dogf2wkOxxRkG3O/B9T6dokyDSl36q19tlMYtXOTThE=
+github.com/owenrumney/go-sarif/v3 v3.2.1/go.mod h1:S2sdyDnv0sxN5x+M8iFZIzZE2+uTX/1uXlwTRx0efT0=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 h1:Jamvg5psRIccs7FGNTlIRMkT8wgtp5eCXdBlqhYGL6U=
 github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=

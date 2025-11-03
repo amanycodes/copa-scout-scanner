@@ -1,12 +1,10 @@
 module github.com/amanycodes/copa-scout-scanner
 
-go 1.24
-
-toolchain go1.24.2
+go 1.25
 
 require (
 	github.com/owenrumney/go-sarif/v3 v3.1.4
-	github.com/project-copacetic/copacetic v0.10.0
+	github.com/project-copacetic/copacetic v0.12.0
 )
 
 require (
